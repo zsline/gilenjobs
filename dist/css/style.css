@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
+  font-display: swap;
+  src: url("../fonts/Unbounded-Light.woff2") format("woff2"), url("../fonts/Unbounded-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
+  font-display: swap;
+  src: url("../fonts/Unbounded-Medium.woff2") format("woff2"), url("../fonts/Unbounded-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unbounded";
+  font-display: swap;
+  src: url("../fonts/Unbounded-Regular.woff2") format("woff2"), url("../fonts/Unbounded-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --main-color: #572C6B;
+  --accent-color: #F3822D;
+  --background: #FAFAFA;
+  --text-color: #808080;
+  --dark-text: #464646;
+}
+
+body {
+  font-family: "Unbounded", sans-serif;
+  height: 100%;
+  color: var(--text-color);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.header {
+  padding: 18px 0;
+  display: fixed;
+  width: 100%;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul, .header li {
+  margin: 0;
+  padding: 0;
+}
+.header .menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 110%;
+  color: var(--main-color);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.header .menu a:hover {
+  color: var(--accent-color);
+}
+.header__btn {
+  padding: 12px 30px;
+  font-weight: 500;
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+  color: var(--main-color);
+  transition: all 0.3s ease;
+}
+.header__btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.footer {
+  margin-top: auto;
+}

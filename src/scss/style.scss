@@ -1,0 +1,72 @@
+@import "reset";
+@import "fonts";
+:root {
+    --main-color: #572C6B;
+    --accent-color: #F3822D;
+    --background: #FAFAFA;
+    --text-color: #808080;
+    --dark-text: #464646;
+}
+
+body{
+    font-family: "Unbounded", sans-serif;
+    height: 100%;
+    color: var(--text-color);
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main{
+    flex: 1 1 auto;
+}
+
+// .container{
+//     max-width: 1340px;
+//     padding: 0 10px;
+//     margin: 0 auto;
+// }
+.header{
+    padding: 18px 0;
+    display: fixed;
+    width: 100%;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul, li{
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        font-size: 16px;
+        line-height: 110%;
+        color: var(--main-color);
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        a:hover{
+            color: var(--accent-color);
+        }
+    }
+    &__btn{
+        padding: 12px 30px;
+        font-weight: 500;
+        border: 1px solid var(--main-color);
+        border-radius: 25px;
+        color: var(--main-color);
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: var(--main-color);
+            color: #fff;
+        }
+    }
+}
+
+.footer{
+    margin-top: auto;
+}
