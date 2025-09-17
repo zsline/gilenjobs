@@ -11,7 +11,7 @@
 
 body{
     font-family: "Unbounded", sans-serif;
-    font-size: 20px;
+    font-size: clamp(0.88rem, calc(0.76rem + 0.59vw), 1.25rem);
     font-weight: 400;
     height: 100%;
     color: var(--text-color);
@@ -27,7 +27,7 @@ h2{
     display: block;
     position: relative;
     font-family: "Gilroy", sans-serif;
-    font-size: 40px;
+    font-size: clamp(1.25rem, calc(0.68rem + 2.84vw), 2.5rem);
     font-weight: 500;
     text-transform: uppercase;
     padding: 9px 0;
@@ -409,7 +409,7 @@ h2{
 // ========== HERO ==========
 
 .hero{
-    padding-top: 145px;
+    padding-top: clamp(8rem, calc(4.56rem + 5.38vw), 9.06rem);
     padding-bottom: 170px;
     background-color: var(--background);
     .container {
@@ -417,41 +417,72 @@ h2{
     }
     h1{
         color: var(--main-color);
-        margin-bottom: 36px;
+        margin-bottom: clamp(1rem, calc(-3.05rem + 6.33vw), 2.25rem);
+    }
+    &__wrapper{
+        &--btns{
+            position: relative;
+            z-index: 3;
+            .btn--secondary {
+                background-color: var(--background);
+                color: var(--main-color);
+                border: 1px solid var(--main-color);
+                border-radius: 4px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: var(--main-color);
+                    color: var(--background);
+                }
+            }
+        }
     }
     &__info{
         max-width: clamp(17.88rem, calc(9.88rem + 40vw), 43.38rem);
     }
     &__title{
-        font-size: 24px;
-        margin-bottom: 56px;
+        font-size: clamp(1.25rem, calc(0.44rem + 1.27vw), 1.5rem);
+        margin-bottom: clamp(2rem, calc(-2.86rem + 7.59vw), 3.5rem);
     }
     &__search{
         position: relative;
         width: 100%;
-        padding: 28px 100px 28px 36px;
+        padding: clamp(1.5rem, calc(0.89rem + 0.95vw), 1.69rem) 100px clamp(1.5rem, calc(0.89rem + 0.95vw), 1.69rem) clamp(1.5rem, calc(1.26rem + 1.18vw), 2.25rem);
         border: none;
         background-color: #fff;
         border-radius: 40px;
         outline: none;
-        z-index: 1;
-        >input[type="text"]{
+        z-index: 9;
+        label{
             width: 100%;
-            border: none;
-            outline: none;
-            font-size: 18px;
-            color: var(--dark-text);
+            span{
+                position: absolute;
+                top: 50%;
+                left: 36px;
+                transform: translateY(-50%);
+                font-size: clamp(1rem, calc(0.59rem + 0.63vw), 1.13rem);
+                color: var(--main-color);
+                z-index: 2;
+                transition: all 0.3s ease;
+            }
+            input[type="text"]{
+                width: 100%;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                color: var(--dark-text);
+            }
         }
         .hero__search--btn{
             position: absolute;
-            top: 9px;
+            top: 50%;
             right: 10px;
+            transform: translateY(-50%);
             z-index: 2;
             >input[type="button"]{
                 border: none;
                 background-color: var(--main-color);
-                width: 67px;
-                height: 67px;
+                width: clamp(3.31rem, calc(0.48rem + 4.43vw), 4.19rem);
+                height: clamp(3.31rem, calc(0.48rem + 4.43vw), 4.19rem);
                 border-radius: 50%;
             }
             &::after{
@@ -476,23 +507,19 @@ h2{
             list-style: none;
             margin: 0;
             padding: 0;
+            padding-bottom: 24px;
             li{
                 display: block;
                 margin-right: 20px;
                 font-size: 18px;
                 cursor: pointer;
                 margin-top: 14px;
-                margin-left: 38px;
+                margin-left: clamp(1.5rem, calc(1.26rem + 1.18vw), 2.25rem);
                 transition: all 0.3s ease;
                 &:hover{
                     color: var(--accent-color);
                 }
             }
-        }
-        &::placeholder{
-            font-size: 18px;
-            line-height: 18px;
-            color: var(--main-color);
         }
         &::after{
             position: absolute;
@@ -503,15 +530,18 @@ h2{
             width: 19px;
             height: 11px;
             right: 100px;
-            top: 40px;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
     &__countries {
+        position: relative;
         margin-top: 38px;
         display: inline-flex;
         gap: 18px;
         flex-wrap: wrap;
         margin-bottom: 44px;
+        max-width: clamp(17.88rem, calc(9.88rem + 40vw), 43.38rem);
         &--link{
             display: inline-flex;
             align-items: center;
@@ -520,6 +550,7 @@ h2{
             font-size: 16px;
             line-height: 16px;
             font-weight: 500;
+            background-color: var(--background);
             color: var(--accent-color);
             padding: 12px 30px;
             border: 2px solid var(--accent-color);
@@ -532,8 +563,8 @@ h2{
         }
     }
     &__btns{
+        position: relative;
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         gap: 20px;
     }
@@ -642,10 +673,79 @@ h2{
         }
     }
 }
+
+@media screen and (max-width: 946px){
+    .top-jobs {
+        top: -120px;
+        transform: rotateY(0);
+    }
+    .top-jobs__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-jobs__item{
+    min-width: 100%;
+}
+}
+
+@media screen and (max-width: 868px) {
+    .hero__search label span{
+        top: -18px;
+    }
+    .hero__search {
+        margin-top: 50px;
+    }
+    .hero__countries{
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 720px) {
+    .hero__picture{
+        display: none;
+    }
+    .hero__info{
+        max-width: 100%;
+    }
+    .hero__btns{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top-jobs__wrapper .top-job__descr{
+        display: none;
+    }
+}
+@media screen and (max-width: 440px){
+    .btn {
+        width: 100%;
+        display: inline-block;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .hero__info{
+        text-align: center;
+    }
+    .hero__title{
+        margin-bottom: 62px;
+    }
+    .hero__info span {
+        top: -28px !important;
+    }
+    .hero__info span, .hero__search .options {
+        text-align: left;
+    }
+    .hero__countries--link{
+        width: 100%;
+    }
+    .hero__search::after{
+        right: 76px;
+    }
+}
+
 .home-about {
-    margin-top: 84px;
+    margin-top: clamp(0rem, calc(-1.65rem + 8.24vw), 5.25rem);
     h2{
-        margin-bottom: 84px;
+        margin-bottom: clamp(1.69rem, calc(0.57rem + 5.59vw), 5.25rem);
         strong:nth-child(1){
             color: var(--main-color);
         }
@@ -655,7 +755,7 @@ h2{
     }
     &__wrapper{
         position: relative;
-        padding: 112px 0 63px;
+        padding: clamp(1.69rem, calc(0.02rem + 8.33vw), 7rem) 0 63px;
         background-position: center right;
         background-size: cover;
         &--gradient{
@@ -679,7 +779,10 @@ h2{
         margin-top: 100px;
     }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 946px) {
+    .home-about {
+        margin-top: -50px;
+    }
     .home-about__wrapper {
         background-position: center left;
     }
@@ -688,8 +791,14 @@ h2{
     }
 }
 @media screen and (max-width: 768px) {
+    .home-about__wrapper{
+        padding: 0;
+    }
     .home-about__wrapper--gradient {
         background: #fff;
+    }
+    .home-about__btns{
+        margin-top: clamp(1.75rem, calc(-1.46rem + 16.07vw), 6.25rem);
     }
 }
 .home-advantages{

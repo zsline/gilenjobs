@@ -68,3 +68,16 @@ const input = document.getElementById("jobsInput");
       list.style.display = "none";
     }
   });
+
+  const search = document.querySelector('.hero__search');
+  const inputSearch = search.querySelector('input');
+  const inputPlaceholder = search.querySelector('span');
+  function inputChange () {
+    search.addEventListener("click", (e) => {
+        if (inputSearch.value) {
+            inputPlaceholder.style.top = '-18px';
+        }
+    });
+}
+inputChange ();
+
