@@ -1074,18 +1074,18 @@ footer{
     .feedback {
         &__bg{
             opacity: 0.5;
-            img:nth-child(1){
-                left: -16%;
-                right: auto;
-                top: 0;
-                bottom: 0;
-            }
-            img:nth-child(2){
-                left: auto;
-                right: -24%;
-                top: 0;
-                bottom: 0;
-            }
+            // img:nth-child(1){
+            //     left: -16%;
+            //     right: auto;
+            //     top: 0;
+            //     bottom: 0;
+            // }
+            // img:nth-child(2){
+            //     left: auto;
+            //     right: -24%;
+            //     top: 0;
+            //     bottom: 0;
+            // }
         }
     
     }
