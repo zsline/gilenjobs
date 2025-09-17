@@ -939,7 +939,7 @@ h2::before {
   height: 24px;
   object-fit: cover;
 }
-.home-countries__item > img {
+.home-countries__item img {
   position: relative;
   width: 100%;
   height: 100%;
@@ -949,7 +949,7 @@ h2::before {
   transition: all 0.3s ease;
   z-index: 1;
 }
-.home-countries__item > img:hover {
+.home-countries__item img:hover {
   scale: 1.1;
 }
 
@@ -973,7 +973,7 @@ h2::before {
   background-color: var(--background);
   margin-bottom: clamp(1rem, 0.29rem + 3.57vw, 2.5rem);
 }
-.vacancies-card > img {
+.vacancies-card img {
   position: relative;
   width: 100%;
   max-height: 165px;
@@ -982,7 +982,7 @@ h2::before {
   transition: all 0.3s ease;
   z-index: 1;
 }
-.vacancies-card > img:hover {
+.vacancies-card img:hover {
   scale: 1.1;
 }
 .vacancies-card__wrapper {
