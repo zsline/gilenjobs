@@ -1062,12 +1062,12 @@ h2::before {
   height: 100%;
   opacity: 0.8;
 }
-.feedback__bg img:nth-child(1) {
+.feedback__bg picture:nth-child(1) {
   right: 60vw;
   top: 0;
   bottom: 0;
 }
-.feedback__bg img:nth-child(2) {
+.feedback__bg picture:nth-child(2) {
   left: 60vw;
   top: 0;
   bottom: 0;
@@ -1120,6 +1120,18 @@ footer .contacts__illustration svg {
   .feedback__bg {
     opacity: 0.5;
   }
+  .feedback__bg picture:nth-child(1) {
+    left: -16%;
+    right: auto;
+    top: 0;
+    bottom: 0;
+  }
+  .feedback__bg picture:nth-child(2) {
+    left: auto;
+    right: -24%;
+    top: 0;
+    bottom: 0;
+  }
 }
 @media (max-width: 956px) {
   .feedback {
@@ -1127,6 +1139,20 @@ footer .contacts__illustration svg {
   }
   .feedback__bg {
     opacity: 0.4;
+  }
+  .feedback__bg picture:nth-child(1) {
+    left: -40px;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    height: clamp(16.88rem, 15.39rem + 7.44vw, 20rem);
+  }
+  .feedback__bg picture:nth-child(2) {
+    left: auto;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    height: clamp(16.88rem, 15.39rem + 7.44vw, 20rem);
   }
 }
 @media (max-width: 768px) {

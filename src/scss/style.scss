@@ -1015,12 +1015,12 @@ h2{
             height: 100%;
             opacity: 0.8;
         }
-        img:nth-child(1){
+        picture:nth-child(1){
             right: 60vw;
             top: 0;
             bottom: 0;
         }
-        img:nth-child(2){
+        picture:nth-child(2){
             left: 60vw;
             top: 0;
             bottom: 0;
@@ -1074,6 +1074,18 @@ footer{
     .feedback {
         &__bg{
             opacity: 0.5;
+            picture:nth-child(1){
+                left: -16%;
+                right: auto;
+                top: 0;
+                bottom: 0;
+            }
+            picture:nth-child(2){
+                left: auto;
+                right: -24%;
+                top: 0;
+                bottom: 0;
+            }
         }
     
     }
@@ -1083,7 +1095,20 @@ footer{
         background-color: #e4e7ff;
         &__bg{
             opacity: 0.4;
-
+            picture:nth-child(1){
+                left: -40px;
+                right: auto;
+                top: 0;
+                bottom: 0;
+                height: clamp(16.88rem, calc(15.39rem + 7.44vw), 20rem);
+            }
+            picture:nth-child(2){
+                left: auto;
+                right: -40px;
+                top: 0;
+                bottom: 0;
+                height: clamp(16.88rem, calc(15.39rem + 7.44vw), 20rem);
+            }
         }
     
     }
