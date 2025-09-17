@@ -1057,7 +1057,7 @@ h2::before {
   height: 100%;
   z-index: 0;
 }
-.feedback__bg img {
+.feedback__bg picture {
   position: absolute;
   height: 100%;
   opacity: 0.8;
