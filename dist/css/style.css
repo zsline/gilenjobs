@@ -1140,6 +1140,10 @@ footer .contacts__illustration svg {
   .feedback__bg {
     opacity: 0.4;
   }
+  .feedback__bg picture img {
+    height: 100%;
+    object-fit: contain;
+  }
   .feedback__bg picture:nth-child(1) {
     left: -40px;
     right: auto;

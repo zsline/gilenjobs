@@ -1095,6 +1095,12 @@ footer{
         background-color: #e4e7ff;
         &__bg{
             opacity: 0.4;
+            picture{
+                img{
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
             picture:nth-child(1){
                 left: -40px;
                 right: auto;
