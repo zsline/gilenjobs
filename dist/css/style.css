@@ -1128,20 +1128,6 @@ footer .contacts__illustration svg {
   .feedback__bg {
     opacity: 0.4;
   }
-  .feedback__bg img:nth-child(1) {
-    left: -40px;
-    right: auto;
-    top: 0;
-    bottom: 0;
-    height: clamp(16.88rem, 15.39rem + 7.44vw, 20rem);
-  }
-  .feedback__bg img:nth-child(2) {
-    left: auto;
-    right: -40px;
-    top: 0;
-    bottom: 0;
-    height: clamp(16.88rem, 15.39rem + 7.44vw, 20rem);
-  }
 }
 @media (max-width: 768px) {
   .contacts .contacts__illustration {
