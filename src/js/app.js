@@ -81,3 +81,21 @@ const input = document.getElementById("jobsInput");
 }
 inputChange ();
 
+const header = document.querySelector('.header');
+const openMenu = header.querySelector('.header__btn--mobile-menu');
+const closeMenu = header.querySelector('.header__btn--mobile-menu-close');
+const scrollWidth = window.innerWidth - document.body.offsetWidth + 'px';
+console.dir(document.body);
+
+openMenu.addEventListener("click", () => {
+    header.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    header.style.paddingRight = scrollWidth;
+});
+closeMenu.addEventListener("click", () => {
+    header.classList.remove('open');
+    document.body.style.overflow = 'auto';
+    header.style.paddingRight = 0;
+});
+
+

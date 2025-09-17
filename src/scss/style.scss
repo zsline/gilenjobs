@@ -379,6 +379,26 @@ h2{
             }
         }
     }
+    .header__btn--mobile-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .header__btn--mobile-menu-close{
+        display: none;
+        cursor: pointer;
+    }
+    &.open{
+        .header__btn--mobile-menu{
+            display: none;
+        }
+        .header__btn--mobile-menu-close{
+            display: block;
+        }
+        .menu{
+            display: flex;
+            top: 66px;
+        }
+    }
 }
 @media screen and (max-width: 868px) {
     .header{
@@ -406,13 +426,9 @@ h2{
             height: calc(100vh - 68px);
             background-color: var(--dark-text);
             color: var(--background);
-            padding: 100px 30px;
+            padding: 60px 30px;
             flex-direction: column;
             transition: all 0.3s ease;
-            &.open{
-                display: flex;
-                top: 68px;
-            }
         }
         &__btn{
             &--mobile-menu{
