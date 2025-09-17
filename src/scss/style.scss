@@ -53,6 +53,11 @@ h2{
         left: 0;
     }
 }
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 .subtitle {
     font-weight: 300;
     text-align: center;
@@ -1007,6 +1012,50 @@ h2{
         }
      }
 }
+.template-page{
+    color: var(--dark-text);
+    h3{
+        margin-bottom: clamp(1rem, calc(-0.22rem + 6.08vw), 4.88rem);
+    }
+    p{
+        margin-bottom: clamp(1.25rem, calc(-0.04rem + 6.47vw), 5.38rem);
+    }
+    strong{
+        color: var(--main-color);
+    }
+}
+.page-hero{
+    position: relative;
+    height: auto;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: clamp(8.75rem, calc(5.61rem + 15.69vw), 18.75rem) 0 clamp(5rem, calc(2.65rem + 11.76vw), 12.5rem);
+    h2{
+        margin-bottom: 0;
+        color: #fff;
+        &::after{
+            background-color: #fff;
+        }
+        &::before{
+            background-color: #fff;
+        }
+    }
+    &__gradient{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(270deg,rgba(189, 189, 189, 0.6) 0%, rgba(87, 87, 87, 0.6) 50%, rgba(189, 189, 189, 0.6) 100%);
+        z-index: 0;
+    }
+}
+
+
+
+
+// ================= FOOTER =================
 .feedback {
     position: relative;
     margin-top: clamp(2.5rem, calc(0.54rem + 9.82vw), 6.63rem);

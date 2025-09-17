@@ -36,50 +36,55 @@ const input = document.getElementById("jobsInput");
   }
 
   // фильтрация по вводу
-  input.addEventListener("input", () => {
-    const value = input.value.toLowerCase();
-    list.innerHTML = "";
-    const filtered = jobs.filter(city =>
-      city.toLowerCase().includes(value)
-    );
-
-    if (filtered.length) {
-      filtered.forEach(city => {
-        const li = document.createElement("li");
-        li.textContent = city;
-        li.onclick = () => {
-          input.value = city;
-          list.style.display = "none";
-        };
-        list.appendChild(li);
-      });
-      list.style.display = "block";
-    } else {
-      list.style.display = "none";
-    }
-  });
-
-  // показать список при фокусе
-  input.addEventListener("focus", showAllOptions);
-
-  // скрыть список при клике вне
+  if(input){
+    input.addEventListener("input", () => {
+      const value = input.value.toLowerCase();
+      list.innerHTML = "";
+      const filtered = jobs.filter(city =>
+        city.toLowerCase().includes(value)
+      );
+  
+      if (filtered.length) {
+        filtered.forEach(city => {
+          const li = document.createElement("li");
+          li.textContent = city;
+          li.onclick = () => {
+            input.value = city;
+            list.style.display = "none";
+          };
+          list.appendChild(li);
+        });
+        list.style.display = "block";
+      } else {
+        list.style.display = "none";
+      }
+    });
+    // показать список при фокусе
+    input.addEventListener("focus", showAllOptions);
+      // скрыть список при клике вне
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".hero__search")) {
       list.style.display = "none";
     }
   });
+  }
+
+
 
   const search = document.querySelector('.hero__search');
-  const inputSearch = search.querySelector('input');
-  const inputPlaceholder = search.querySelector('span');
-  function inputChange () {
-    search.addEventListener("click", (e) => {
-        if (inputSearch.value) {
-            inputPlaceholder.style.top = '-18px';
-        }
-    });
-}
-inputChange ();
+  if(search){
+    const inputSearch = search.querySelector('input');
+    const inputPlaceholder = search.querySelector('span');
+    function inputChange () {
+      search.addEventListener("click", (e) => {
+          if (inputSearch.value) {
+              inputPlaceholder.style.top = '-18px';
+          }
+      });
+  }
+  inputChange ();
+  }
+
 
 const header = document.querySelector('.header');
 const openMenu = header.querySelector('.header__btn--mobile-menu');

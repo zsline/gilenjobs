@@ -9,7 +9,7 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Главная</title>
+  <title>О компании</title>
 </head>
 
   <body>
@@ -80,530 +80,79 @@
   </div>
 </header>
 
-      <main class="main">
-        <div class="hero">
+      <main class="main about-page template-page">
+        <div
+          class="page-hero"
+          style="background-image: url(./img/about-bg.jpg)"
+        >
+          <div class="page-hero__gradient"></div>
+          <h1 hidden>О компании Gilen Jobs</h1>
           <div class="container">
-            <div class="hero__wrapper">
-              <div class="hero__info">
-                <h1>Идеальная работа за границей для вас</h1>
-                <div class="hero__title">
-                  Ваш надежный путь к работе за рубежом
-                </div>
-                <form class="hero__search">
-                  <label>
-                    <span>Найди подходящую должность</span>
-                    <input
-                      id="jobsInput"
-                      name="jobs-input"
-                      type="text"
-                      placeholder=""
+            <div class="page-hero__wrapper">
+              <h2>О компании Gilen Jobs</h2>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-10 offset-1 mt-5">
+                <p>
+                  <strong>Gilen Jobs Xususiy Bandlik Agentligi</strong> —
+                  частное агентство занятости, официально зарегистрированное в
+                  Республике Узбекистан. Наша миссия — создать прозрачную и
+                  надежную систему трудоустройства за рубежом, где каждый
+                  соискатель чувствует себя защищенным, а каждый работодатель
+                  получает квалифицированных сотрудников. Мы сотрудничаем с
+                  работодателями из Европы, Кореи, Японии, стран Персидского
+                  залива и других регионов.
+                </p>
+
+                <h3>Наши услуги:</h3>
+                <p>
+                                  <ul>
+                  <li>Поиск вакансий по всему миру</li>
+                  <li>
+                    Работа в Европе, Корее, Японии, странах Ближнего Востока и
+                    других регионах.
+                  </li>
+                  <li>Легальная занятость с официальными контрактами.</li>
+                  <li>Подбор соискателей для работодателей</li>
+                  <li>
+                    Квалифицированные кадры в разных сферах: строительство,
+                    сельское хозяйство, медицина, промышленность, услуги.
+                  </li>
+                  <li>Помощь в оформлении документов</li>
+                  <li>
+                    Визы, разрешения на работу, страховки, переводы документов.
+                  </li>
+                  <li>Составление и сопровождение договоров</li>
+                  <li>Прозрачные отношения с работодателями</li>
+                  <li>Юридическая защита прав мигрантов</li>
+                  <li>Консультации и подготовка</li>
+                  <li>Курсы языка (по запросу)</li>
+                  <li>Консультации по адаптации за границей</li>
+                </ul>
+                </p>
+                <h3>Документы:</h3>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <img
+                      src="./img/ЛИЦЕНЗИЯ_GILEN JOBS XUSUSIY BANDLIK AGENTLIGI.jpg"
+                      alt=""
                     />
-                  </label>
-                  <ul id="jobsList" class="options"></ul>
-                  <div class="hero__search--btn">
-                    <input type="button" value="" />
                   </div>
-                </form>
-              </div>
-              <div class="hero__wrapper--btns">
-                <div class="hero__countries">
-                  <a href="#" class="hero__countries--link"
-                    ><img
-                      src="img/icons/flag-fr.svg"
-                      alt="flag-uk"
-                      width="18"
-                      height="18"
-                    />Франция</a
-                  >
-                  <a href="#" class="hero__countries--link"
-                    ><img
-                      src="img/icons/flag-li.svg"
-                      alt="flag-de"
-                      width="18"
-                      height="18"
-                    />Литва</a
-                  >
-                  <a href="#" class="hero__countries--link"
-                    ><img
-                      src="img/icons/flag-bl.svg"
-                      alt="flag-bl"
-                      width="18"
-                      height="18"
-                    />Болгария</a
-                  >
-                  <a href="#" class="hero__countries--link"
-                    ><img
-                      src="img/icons/flag-pl.svg"
-                      alt="flag-pl"
-                      width="18"
-                      height="18"
-                    />Польша</a
-                  >
-                  <a href="#" class="hero__countries--link"
-                    ><img
-                      src="img/icons/flag-ru.svg"
-                      alt="flag-ru"
-                      width="18"
-                      height="18"
-                    />Россия</a
-                  >
-                  <a href="#" class="hero__countries--link"
-                    ><img
-                      src="img/icons/flag-ka.svg"
-                      alt="flag-ka"
-                      width="18"
-                      height="18"
-                    />Канада</a
-                  >
-                </div>
-                <div class="hero__btns">
-                  <a href="#" class="btn btn--primary">Все предложения</a>
-                  <a href="#" class="btn btn--secondary">Задать вопрос</a>
-                </div>
-              </div>
-            </div>
-            <div class="hero__picture">
-              <img
-                src="img/hero-picture.jpg"
-                alt="hero-picture"
-                width="576px"
-                height="721px"
-              />
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-        <div class="top-jobs">
-          <div class="container">
-            <div class="top-jobs__wrapper">
-              <div class="top-jobs__item top-job">
-                <div class="top-job__wrapper">
-                  <div class="top-job__header">
-                    <div class="top-job__name">
-                      <span class="top-job__name--icon">
-                        <img
-                          src="img/icons/hugeicons_work.svg"
-                          alt="flag-li"
-                          width="16"
-                          height="16"
-                        />
-                      </span>
-                      Сварщик
-                    </div>
-                    <div class="top-job__country">
-                      <span class="top-job__country--icon">
-                        <img
-                          src="img/icons/bytesize_location.svg"
-                          alt="flag-li"
-                          width="16"
-                          height="16"
-                        />
-                      </span>
-                      Литва
-                    </div>
-                  </div>
-                  <div class="top-job__descr">
-                    На постоянную работу в строительную компанию “БалтСтрой”
-                    требуется сварщик. Опыт работы от 1 года, наличие
-                    удостоверения сварщика обязательно. Работа вахтовым методом
-                    60/30, проживание в общежитии предоставляется бесплатно.
-                  </div>
-                  <div class="top-job__date">
-                    Добавлено:
-                    <span class="top-job__date--icon">12.06.2024</span>
-                  </div>
-                  <a href="#" class="card-btn">Смотреть вакансию</a>
-                </div>
-              </div>
-              <div class="top-jobs__item top-job">
-                <div class="top-job__wrapper">
-                  <div class="top-job__header">
-                    <div class="top-job__name">
-                      <span class="top-job__name--icon">
-                        <img
-                          src="img/icons/hugeicons_work.svg"
-                          alt="flag-li"
-                          width="16"
-                          height="16"
-                        />
-                      </span>
-                      Сварщик
-                    </div>
-                    <div class="top-job__country">
-                      <span class="top-job__country--icon">
-                        <img
-                          src="img/icons/bytesize_location.svg"
-                          alt="flag-li"
-                          width="16"
-                          height="16"
-                        />
-                      </span>
-                      Литва
-                    </div>
-                  </div>
-                  <div class="top-job__descr">
-                    На постоянную работу в строительную компанию “БалтСтрой”
-                    требуется сварщик. Опыт работы от 1 года, наличие
-                    удостоверения сварщика обязательно. Работа вахтовым методом
-                    60/30, проживание в общежитии предоставляется бесплатно.
-                  </div>
-                  <div class="top-job__date">
-                    Добавлено:
-                    <span class="top-job__date--icon">12.06.2024</span>
-                  </div>
-                  <a href="#" class="card-btn">Смотреть вакансию</a>
-                </div>
-              </div>
-              <div class="top-jobs__item top-job">
-                <div class="top-job__wrapper">
-                  <div class="top-job__header">
-                    <div class="top-job__name">
-                      <span class="top-job__name--icon">
-                        <img
-                          src="img/icons/hugeicons_work.svg"
-                          alt="flag-li"
-                          width="16"
-                          height="16"
-                        />
-                      </span>
-                      Сварщик
-                    </div>
-                    <div class="top-job__country">
-                      <span class="top-job__country--icon">
-                        <img
-                          src="img/icons/bytesize_location.svg"
-                          alt="flag-li"
-                          width="16"
-                          height="16"
-                        />
-                      </span>
-                      Литва
-                    </div>
-                  </div>
-                  <div class="top-job__descr">
-                    На постоянную работу в строительную компанию “БалтСтрой”
-                    требуется сварщик. Опыт работы от 1 года, наличие
-                    удостоверения сварщика обязательно. Работа вахтовым методом
-                    60/30, проживание в общежитии предоставляется бесплатно.
-                  </div>
-                  <div class="top-job__date">
-                    Добавлено:
-                    <span class="top-job__date--icon">12.06.2024</span>
-                  </div>
-                  <a href="#" class="card-btn">Смотреть вакансию</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-about">
-          <div class="container">
-            <h2>О компании <strong>Gilen</strong> <strong>Jobs</strong></h2>
-          </div>
-          <div
-            class="home-about__wrapper"
-            style="background-image: url(./img/home-about.jpg)"
-          >
-            <div class="home-about__wrapper--gradient"></div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-7">
-                  <p>
-                    <strong>Gilen Jobs Xususiy Bandlik Agentligi</strong> —
-                    лицензированное агентство по трудовой миграции, которое
-                    помогает гражданам Узбекистана находить достойные вакансии
-                    за рубежом. Мы сопровождаем вас на каждом этапе: от подбора
-                    работы до оформления документов и подписания договора с
-                    работодателем. Наша компания осуществляет свою деятельность
-                    на основании государственной лицензии<br />
-                    <strong>№ 875759</strong>, выданной Миграционным агенством
-                    при Кабинете министров республики Узбекистан.
-                  </p>
-                  <div class="home-about__btns">
-                    <a href="#" class="btn btn--secondary"
-                      >Смотреть документы</a
-                    >
-                    <a href="#" class="btn btn--accent">Связаться</a>
+                  <div class="col-md-6">
+                    <img src="./img/Свидетельство о регистрации.jpg" alt="" />
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="home-advantages">
-          <div class="container">
-            <h2>Почему выбирают нас?</h2>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="home-advantages__item">
-                  <div class="home-advantages__item--img">
-                    <img src="./img/advanteges-1.jpg" alt="" />
-                  </div>
-                  <div class="home-advantages__item--text">
-                    Только проверенные работодатели
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="home-advantages__item">
-                  <div class="home-advantages__item--img">
-                    <img src="./img/advantages-2.png" alt="" />
-                  </div>
-                  <div class="home-advantages__item--text">
-                    Только проверенные работодатели
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="home-advantages__item">
-                  <div class="home-advantages__item--img">
-                    <img src="./img/advantages-3.jpg" alt="" />
-                  </div>
-                  <div class="home-advantages__item--text">
-                    Только проверенные работодатели
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="home-advantages__item">
-                  <div class="home-advantages__item--img">
-                    <img src="./img/advantages-4.jpg" alt="" />
-                  </div>
-                  <div class="home-advantages__item--text">
-                    Только проверенные работодатели
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="btn btn--secondary btn--grey">
-              Получить консультацию
-            </div>
-          </div>
-        </div>
-        <div class="home-countries">
-          <div class="container">
-            <h2>Работа в разных странах</h2>
-            <div class="home-countries__subtitle subtitle">
-              Мы сотрудничаем с работодателями в Европе, Канаде и России.
-              Выберите страну и найдите актуальные вакансии.
-            </div>
-            <div class="home-countries__slider">
-              <div class="home-countries__slide">
-                <a href="#" class="home-countries__item">
-                  <div class="home-countries__item--header">
-                    <img
-                      src="img/icons/flag-fr.svg"
-                      alt="flag-uk"
-                      width="18"
-                      height="18"
-                    />Франция
-                  </div>
-                  <img src="./img/home-countres-1.jpg" alt="" />
-                </a>
-              </div>
-              <div class="home-countries__slide">
-                <a href="#" class="home-countries__item">
-                  <div class="home-countries__item--header">
-                    <img
-                      src="img/icons/flag-it.svg"
-                      alt="flag-uk"
-                      width="18"
-                      height="18"
-                    />Италия
-                  </div>
-                  <img src="./img/home-countres-2.jpg" alt="" />
-                </a>
-              </div>
-              <div class="home-countries__slide">
-                <a href="#" class="home-countries__item">
-                  <div class="home-countries__item--header">
-                    <img
-                      src="img/icons/flag-ka.svg"
-                      alt="flag-uk"
-                      width="18"
-                      height="18"
-                    />Канада
-                  </div>
-                  <img src="./img/home-countres-3.jpg" alt="" />
-                </a>
-              </div>
-              <div class="home-countries__slide">
-                <a href="#" class="home-countries__item">
-                  <div class="home-countries__item--header">
-                    <img
-                      src="img/icons/flag-pl.svg"
-                      alt="flag-uk"
-                      width="18"
-                      height="18"
-                    />Польша
-                  </div>
-                  <img src="./img/home-countres-4.jpg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-vacancies">
-          <div class="container">
-            <h2>Актуальные вакансии</h2>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="home-vacancies__item vacancies-card">
-                  <img src="./img/vacansies-default.jpg" alt="" />
-                  <div class="vacancies-card__wrapper">
-                    <div class="vacancies-card__inner">
-                      <div class="vacancies-card__content">
-                        <ul>
-                          <li class="vacancies-job">Монтажник</li>
-                          <li class="vacancies-location">Польша, г. Познань</li>
-                          <li class="vacancies-salary">от 2000 EUR/мес.</li>
-                          <li class="vacancies-сonditions">
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="home-vacancies__item vacancies-card">
-                  <img src="./img/vacansies-default.jpg" alt="" />
-                  <div class="vacancies-card__wrapper">
-                    <div class="vacancies-card__inner">
-                      <div class="vacancies-card__content">
-                        <ul>
-                          <li class="vacancies-job">Монтажник</li>
-                          <li class="vacancies-location">Польша, г. Познань</li>
-                          <li class="vacancies-salary">от 2000 EUR/мес.</li>
-                          <li class="vacancies-сonditions">
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="home-vacancies__item vacancies-card">
-                  <img src="./img/vacansies-default.jpg" alt="" />
-                  <div class="vacancies-card__wrapper">
-                    <div class="vacancies-card__inner">
-                      <div class="vacancies-card__content">
-                        <ul>
-                          <li class="vacancies-job">Монтажник</li>
-                          <li class="vacancies-location">Польша, г. Познань</li>
-                          <li class="vacancies-salary">от 2000 EUR/мес.</li>
-                          <li class="vacancies-сonditions">
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="home-vacancies__item vacancies-card">
-                  <img src="./img/vacansies-default.jpg" alt="" />
-                  <div class="vacancies-card__wrapper">
-                    <div class="vacancies-card__inner">
-                      <div class="vacancies-card__content">
-                        <ul>
-                          <li class="vacancies-job">Монтажник</li>
-                          <li class="vacancies-location">Польша, г. Познань</li>
-                          <li class="vacancies-salary">от 2000 EUR/мес.</li>
-                          <li class="vacancies-сonditions">
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="home-vacancies__item vacancies-card">
-                  <img src="./img/vacansies-default.jpg" alt="" />
-                  <div class="vacancies-card__wrapper">
-                    <div class="vacancies-card__inner">
-                      <div class="vacancies-card__content">
-                        <ul>
-                          <li class="vacancies-job">Монтажник</li>
-                          <li class="vacancies-location">Польша, г. Познань</li>
-                          <li class="vacancies-salary">от 2000 EUR/мес.</li>
-                          <li class="vacancies-сonditions">
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="home-vacancies__item vacancies-card">
-                  <img src="./img/vacansies-default.jpg" alt="" />
-                  <div class="vacancies-card__wrapper">
-                    <div class="vacancies-card__inner">
-                      <div class="vacancies-card__content">
-                        <ul>
-                          <li class="vacancies-job">Монтажник</li>
-                          <li class="vacancies-location">Польша, г. Познань</li>
-                          <li class="vacancies-salary">от 2000 EUR/мес.</li>
-                          <li class="vacancies-сonditions">
-                            <ul>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                              <li></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <a href="#">Подробнее</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="" class="btn btn--grey">Показать ещё</a>
           </div>
         </div>
       </main>
-      <footer>
+    </div>
+    <footer>
   <div class="feedback">
     <div class="feedback__bg">
       <img src="./img/contact-left.png" alt="feedback-bg" />
@@ -960,7 +509,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </footer>
 
-    </div>
 
     <script src="js/app.min.js"></script>
   </body>
